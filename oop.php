@@ -1,5 +1,6 @@
 <?php
 
+
 abstract class wappnet_a{
   public $name;
   public function __construct($name) {
