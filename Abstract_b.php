@@ -1,23 +1,27 @@
 <?php
 
-abstract class BaseEmployee {
+abstract class wappnet {
 
-	protected $firstname;
-	protected $lastname;
+	protected $firstname_emp;
+	protected $lastname_emp;
+
+	// create function for full Name
 	
 	public function getFullName() {
-		return $this->firstname. " " .$this->lastname;
+		return $this->firstname_emp. " " .$this->lastname_emp;
 	}
-	
+	 
+	// create abstract function for mouth salary  
+
 	public abstract function getMonthlySalary();
 	
-	public function __construct($f, $l) {
-		$this->firstname = $f;
-		$this->lastname = $l;
+	public function __construct($firstname, $lastname) {
+		$this->firstname = $firstname;
+		$this->lastname = $lastname;
 	}
 }
 
-class FullTimeEmployee extends BaseEmployee {
+class FullTimeEmployee extends wappnet {
 	
 	protected $annualSalary;
 	
@@ -26,9 +30,10 @@ class FullTimeEmployee extends BaseEmployee {
 	}
 }
 
-class ContractEmployee extends BaseEmployee {
-	protected $hourlyRate;
-	protected $totalHours;
+class ContractEmployee extends wappnet
+ {
+	protected $hourlyRate = 850;
+	protected $totalHours = 8;
 
 	public function getMonthlySalary() {
 		return $this->hourlyRate * $this->totalHours;
