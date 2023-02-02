@@ -43,9 +43,7 @@
 
     //end of the class.
 
-?>
-
-<?php
+    
     /* Using the Vehicle class to create a vehicle by passing
        three parameters 'vehicle name', 'vehicle model', 'vehicle type' 
        to the class.
@@ -107,7 +105,7 @@
 
     /* Printing information using store values in the variables. */
     echo "Printing Vehicle Information\n";
-    echo "*****************************\n";
+    echo "<br>\n";
 
     echo "Vehicle name is $vehicle_name \n";
     echo "Vehicle Model is $vehicle_model \n";
@@ -115,18 +113,18 @@
 
     printf("\n\n");
     echo "Printing Vehicle Mode\n";
-    echo "***********************\n";
+    echo "<br>\n";
     print_r( $vehicle_mode );
 
     printf("\n\n");
     echo "Printing Vehicle Features\n";
-    echo "**************************\n";
+    echo "<br>\n";
     print_r( $vehicle_features );
 
     printf("\n\n");
 
     echo "Printing Vehicle Identification\n";
-    echo "******************************\n";
+    echo "<br>\n";
     print_r( $vehicle_id );
 
 
