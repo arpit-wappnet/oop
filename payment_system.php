@@ -39,6 +39,7 @@ class PayPal extends PaymentMethod
     public function processPayment($amount)
     {
         // log in to PayPal account and process the payment
+        
         echo "Payment of $amount processed using PayPal.\n";
     }
 }
