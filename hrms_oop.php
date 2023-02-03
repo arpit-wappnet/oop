@@ -66,10 +66,15 @@ $pay = $payroll->calculatePay();
 $ben = $benefits->calculateBenefits();
 
 echo "Employee Name: " . $employee->getName() . "<pre>";
+
 echo "Employee Email: " . $employee->getEmail() . "<pre>";
+
 echo "Employee Position: " . $employee->getPosition() . "<pre>";
+
 echo "Employee Salary: $" . $employee->getSalary() . "<pre>";
+
 echo "Employee Pay: $" . $pay . "<pre>";
+
 echo "Employee Benefits: " . $ben . "<pre>";
 
 ?>

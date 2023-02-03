@@ -39,7 +39,7 @@ $p = new Flag();
 $q = $o;
 $r = new OtherFlag();
 
-echo "Two instances of the same class\n";
+echo "Two instances of the same class <pre>";
 compareObjects($o, $p);
 
 echo "\nTwo references to the same instance\n";
